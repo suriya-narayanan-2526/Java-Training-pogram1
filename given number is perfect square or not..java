@@ -9,16 +9,13 @@ public class Solution {
     public static void main(String[] args) {
         /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
         Scanner sc = new Scanner(System.in);
-        String s = sc.nextLine();
-        int u=0;
-        for( int i=0;i<s.length();i++)
+        int n = sc.nextInt();
+        int m =(int)Math.sqrt(n);
+        if( m*m== n)
         {
-            char c =s.charAt(i);
-          if(c>=65 && c<=90)
-          {
-              u++;
-          }
+            System.out.println("Perfect Square");
         }
-        System.out.println(u);
+        else
+            System.out.println("Not");
     }
 }
